@@ -1,0 +1,111 @@
+@media screen and (max-width: 992px) {
+   .navbar{
+      
+   }
+   body{
+      position: relative;
+   }
+
+
+   #navbar-toggler:checked ~ .container-fluid{
+      background: rgba(17, 17, 17, 0.95);
+      
+      opacity: 0.999;
+      z-index: 5;
+      padding: 0;
+      top: 0;
+   }
+   
+   #navbar-toggler:checked ~ .container-fluid .navbar {
+      background: rgba(17, 17, 17, 0.95);
+   }
+   
+   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-brand{
+      position: absolute;
+      top: 48px;
+      left: 40px;
+      z-index: 5;
+   }
+   
+   .navbar-toggler-icon{
+      display: block;
+      width: 19px;
+      height: 13px;
+      padding: 0;   
+      right: 0;
+      z-index: 5;
+      top: 5.5px;
+      position: absolute;
+   }
+   
+   .navbar-toggler-icon span,
+   .navbar-toggler-icon span::before,
+   .navbar-toggler-icon span::after{
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: var(--bs-white);
+      position: absolute;
+   }
+   
+   .navbar-toggler-icon span::before{
+      content: '';
+      top: 5px;
+   }
+   
+   .navbar-toggler-icon span::after{
+      content: '';
+      top: 10px;
+   }
+
+   .navbar-nav{
+      display: none;
+   }
+
+   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-nav{
+      display: block;
+      position: absolute;
+      top: 192px;
+      left: 120px;
+   }
+
+   .nav-link{
+      margin-bottom: 48px;
+      
+   }
+
+   .nav-last-link{
+      margin-bottom: 0;
+   }
+
+   #navbar-toggler:checked ~ .container-fluid .navbar{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      height: 1032px;
+      width: 100%;
+      z-index: 5;
+      
+      
+   }
+
+   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon{
+      right: 40px;
+      top: 60px;
+   }
+
+   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon span{
+      transform: rotate(45deg);
+   }
+
+   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon span::before{
+      top: 0;
+  transform: rotate(0);
+   }
+
+   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon span::after{
+      top: 0;
+      transform: rotate(90deg);
+   }
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width: 396px) {
+   .footer-row{
+      flex-direction: column;
+      align-items: center;
+   } 
+
+   .third-footer-col{
+      margin-top: 24px;
+   }
+}
