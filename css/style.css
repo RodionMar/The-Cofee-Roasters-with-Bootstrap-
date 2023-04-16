@@ -4,6 +4,7 @@
 body{
    font-family: 'Inter';
    overflow-x: hidden;
+   scroll-behavior: smooth
 }
 
 main{
@@ -97,9 +98,7 @@ h6.bold{
    color: #000000;
 }
 
-/* .container-fluid{
-   
-} */
+
 
 .container-fluid{
    padding-left: 40px;

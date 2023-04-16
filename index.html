@@ -14,50 +14,42 @@
   <link rel="stylesheet" href="css/805.css">
   <link rel="stylesheet" href="css/575.css">
   <link rel="stylesheet" href="css/396.css">
-  <!-- <script>
-    $(window).scroll(function () {
-   if ($(document).scrollTop() > 100) {
-     $("nav").addClass("animate");
-   } else {
-     $("nav").removeClass("animate");
-   }
- });
-  </script> -->
+  <script src="./js/menu.js" defer></script>
   <title>The Coffee Roasters</title>
 </head>
 
-<body>
-  <header>
-    <input type="checkbox" id="navbar-toggler">
+<body class="body">
+  <header class="header">
+    <!-- <input type="checkbox" id="navbar-toggler"> -->
     <div class="container-fluid position-absolute">
       <nav class="navbar navbar-expand-lg d-flex justify-content-between position-relative">
         
         
-        <label for="navbar-toggler" class="navbar-toggler-icon">
+        <div class="navbar-toggler-icon" id="hamburger">
           <span></span>
-        </label>
+        </div>
         <a class="navbar-brand white" href="#home">Coffee House</a>
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link nav-link-w-48 white" aria-current="page" href="#home">HOME</a>
+          <li class="nav-item" >
+            <a class="nav-link nav-link-w-48 white" id="nav-link-item" aria-current="page" onclick="closeMenu()" href="#home">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-w-65 white" href="#why_us">WHY US</a>
+            <a class="nav-link nav-link-w-65 white" id="nav-link-item" onclick="closeMenu()" href="#why_us">WHY US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-w-48 white" aria-current="page" href="#menu">MENU</a>
+            <a class="nav-link nav-link-w-48 white" id="nav-link-item" aria-current="page" onclick="closeMenu()" href="#menu">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-w-126 white" aria-current="page" href="#happy_clients">HAPPY CLIENTS</a>
+            <a class="nav-link nav-link-w-126 white" id="nav-link-item" aria-current="page" onclick="closeMenu()" href="#happy_clients">HAPPY CLIENTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-w-44 white" aria-current="page" href="#blog">BLOG</a>
+            <a class="nav-link nav-link-w-44 white" id="nav-link-item" aria-current="page" onclick="closeMenu()" href="#blog">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-w-130 white" aria-current="page" href="#our_locations">OUR LOCATION</a>
+            <a class="nav-link nav-link-w-130 white" id="nav-item" aria-current="page" onclick="closeMenu()" href="#our_locations">OUR LOCATION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-last-link nav-link-w-106  white" aria-current="page" href="#newsletter">NEWSLETTER</a>
+            <a class="nav-link nav-last-link nav-link-w-106  white" id="nav-item" aria-current="page" onclick="closeMenu()" href="#newsletter">NEWSLETTER</a>
           </li>
         </ul>
     </div>

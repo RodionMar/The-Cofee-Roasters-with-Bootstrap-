@@ -6,8 +6,11 @@
       position: relative;
    }
 
+   .body.opened{
+      overflow-y: hidden;
+   }
 
-   #navbar-toggler:checked ~ .container-fluid{
+   .header.opened .container-fluid{
       background: rgba(17, 17, 17, 0.95);
       
       opacity: 0.999;
@@ -15,12 +18,19 @@
       padding: 0;
       top: 0;
    }
-   
-   #navbar-toggler:checked ~ .container-fluid .navbar {
+
+   .header.opened .navbar {
       background: rgba(17, 17, 17, 0.95);
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      height: 1032px;
+      width: 100%;
+      z-index: 5;
    }
-   
-   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-brand{
+
+   .header.opened .navbar-brand{
       position: absolute;
       top: 48px;
       left: 40px;
@@ -62,7 +72,7 @@
       display: none;
    }
 
-   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-nav{
+   .header.opened .navbar-nav{
       display: block;
       position: absolute;
       top: 192px;
@@ -78,7 +88,7 @@
       margin-bottom: 0;
    }
 
-   #navbar-toggler:checked ~ .container-fluid .navbar{
+   /* #navbar-toggler:checked ~ .container-fluid .navbar{
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -88,23 +98,23 @@
       z-index: 5;
       
       
-   }
+   } */
 
-   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon{
+   .header.opened .navbar-toggler-icon{
       right: 40px;
       top: 60px;
    }
 
-   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon span{
+   .header.opened .navbar-toggler-icon span{
       transform: rotate(45deg);
    }
 
-   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon span::before{
+   .header.opened .navbar-toggler-icon span::before{
       top: 0;
-  transform: rotate(0);
+      transform: rotate(0);
    }
 
-   #navbar-toggler:checked ~ .container-fluid .navbar .navbar-toggler-icon span::after{
+   .header.opened .navbar-toggler-icon span::after{
       top: 0;
       transform: rotate(90deg);
    }
